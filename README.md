@@ -60,7 +60,7 @@ Next, compile it using the RISC-V GCC compiler.
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
 ```
-
+![image](https://github.com/user-attachments/assets/732013ca-7b48-4408-ac36-01ef83bfc12b)
 
 After compiling, use
 
