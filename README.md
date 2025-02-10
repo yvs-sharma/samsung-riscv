@@ -72,12 +72,11 @@ to disassemble the code and examine its assembly language version. This provides
 
 The Assembly language code is displayed.
 
+Using O1
 ![image](https://github.com/user-attachments/assets/955d5f39-b1ea-4c34-9027-b7aa30410faa)
 
-Using O1
-
-
 Using Ofast
+![image](https://github.com/user-attachments/assets/4efc08b1-1f7f-4752-87dd-4f852f58bef6)
 
 Optimization levels in GCC improve code performance and size to varying degrees. -O0 applies no optimization, suitable for debugging. -O1 offers basic optimizations, making code faster and smaller without significantly increasing compilation time, striking a balance between performance and simplicity. -Ofast prioritizes speed over strict compliance with standards, ideal for performance-critical tasks but requires thorough testing to avoid unexpected issues. Testing is crucial, as higher optimizations may complicate debugging or affect precision in critical calculations.
 
