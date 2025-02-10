@@ -155,17 +155,23 @@ For riscv compiler ,
 spike pk swap.o
 ```
 
-![image](https://github.com/user-attachments/assets/1a105a81-3e54-4135-921b-540f58007c90)
+![image](https://github.com/user-attachments/assets/3112d548-d3d1-4d6d-ad7f-8700b510de0b)
 
 Object dump using O1 and Ofast
 
-![image](https://github.com/user-attachments/assets/732013ca-7b48-4408-ac36-01ef83bfc12b)
+
+
+![Compiling with Ofast](https://github.com/user-attachments/assets/8e2061e9-de02-43a3-9f8a-dbece772ec93)
 
 Using Ofast
 
-![image](https://github.com/user-attachments/assets/955d5f39-b1ea-4c34-9027-b7aa30410faa)
+
+
+![compiling with O1](https://github.com/user-attachments/assets/5046c8dd-1462-4a24-bc3e-79eac48358e7)
 
 Using O1
+
+
 
 Debug:
 
@@ -178,7 +184,16 @@ riscv64-unknown-elf-objdump -d swap.o | less
  ```
    spike -d pk swap.o
  ```
-![image](https://github.com/user-attachments/assets/4efc08b1-1f7f-4752-87dd-4f852f58bef6)
+
+
+**Assembly of Ofast**
+![Assembly for Ofast](https://github.com/user-attachments/assets/77c1f5ed-6055-428f-b779-246d1ff417af)
+
+
+
+**Assembly of O1**
+![Assembly for O1](https://github.com/user-attachments/assets/3524f47f-336d-4d50-ab7d-ef7eaa9e41c7)
+
 
 
 ### Description of the commands used while execution:
