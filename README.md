@@ -44,9 +44,7 @@ gcc sum.c
 
 ```
 
-
-
-
+![image](https://github.com/user-attachments/assets/1a105a81-3e54-4135-921b-540f58007c90)
 
 ### RISC-V lab
 
