@@ -406,86 +406,86 @@ Example: jal x1, 2048
 <details>
 <summary><b>TASK 4:</b> 
   
-The task focuses on exploring C and RISC-V labs to compile C programs using both the GCC and RISC-V compilers.</summary>
+To conduct a functional simulation of the provided RISC-V Core Verilog netlist and testbench.</summary>
 
-### C Lab
+**Note**: The Verilog code and testbench for the RISC-V processor have already been created.
 
-We start by creating a file in the chosen directory using a simple editor like Leafpad. After writing the program to calculate the sum of numbers from 1 to n, save the file, close the editor, and compile it using GCC. Once compiled, you can run the program to see the output.
+### Step 1: Installation of iverilog and gtkwave
 
- C Code to calculate 1 to n numbers
-```
-#include<stdio.h>
-int main()
-{
-  int i, sum=0, n=90;
-  for(i=0;i<=n;++i)
-    {
-      sum+=i;
-    }
-  printf("Sum of numbers from 1 to %d is %d\n",n,sum);
-  return 0;
-}
-```
+Use the following commands for installation:
 
-The commands used are
-```
-gcc sum.c
-./a.out
+1. For iverilog ,
+` $ sudo apt install iverilog`
 
-```
+2. For gtkwave,
+` $ sudo apt install gtkwave`
 
-![image](https://github.com/user-attachments/assets/1a105a81-3e54-4135-921b-540f58007c90)
+### Step 2: Creating files for verilog and testbench by following commands
+`  $ gedit iiitb_rv32i.v`
+` $ gedit iiitb_rv32i_tb.v`
 
-### RISC-V lab
+### Step 3: To simulate and run the verilog code , 
+`  $ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v`
+` $ ./iiitb_rv32i`
 
-It involves viewing the code with the cat command to ensure it’s correct.
+### Step 4: Command to see the simulation waveform ,
+`  $ gtkwave iiitb_rv32i.vcd`
 
-```
-cat sum.c
+The gtkwave will be opened and the following window will appear.
+![image](https://github.com/user-attachments/assets/17c33cea-da53-448e-a1bd-444a42554025)
 
-```
-Next, compile it using the RISC-V GCC compiler.
 
-```
-riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
-riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
-```
-![image](https://github.com/user-attachments/assets/732013ca-7b48-4408-ac36-01ef83bfc12b)
+### Step 5: Analysing output waveform
 
-After compiling, use
+Some of the output waveforms are given here ,
 
-```
-riscv64-unknown-elf-objdump -d sum.o
+**1. sub r7 , r1 , r2**
+![sub](https://github.com/user-attachments/assets/f4828f86-c400-43d2-9f0e-2c8d799dd9e2)
 
-```
-to disassemble the code and examine its assembly language version. This provides a closer look at how the program works at the hardware level.
+Here , the subtraction of r2 from r1 happens and the result is stored in r7.
 
-The Assembly language code is displayed.
 
-Using O1
-![image](https://github.com/user-attachments/assets/955d5f39-b1ea-4c34-9027-b7aa30410faa)
+**2. add r6 , r1 , r2**
+![add](https://github.com/user-attachments/assets/e74c7763-8243-4ac9-8813-d76c7b197823)
 
-Using Ofast
-![image](https://github.com/user-attachments/assets/4efc08b1-1f7f-4752-87dd-4f852f58bef6)
+Here , the sum of r2 from r1 happens and the result is stored in r6.
 
-Optimization levels in GCC improve code performance and size to varying degrees. -O0 applies no optimization, suitable for debugging. -O1 offers basic optimizations, making code faster and smaller without significantly increasing compilation time, striking a balance between performance and simplicity. -Ofast prioritizes speed over strict compliance with standards, ideal for performance-critical tasks but requires thorough testing to avoid unexpected issues. Testing is crucial, as higher optimizations may complicate debugging or affect precision in critical calculations.
 
-### Description of the commands used while execution:
+**3. and r8 , r1 , r3**
+![and](https://github.com/user-attachments/assets/b37ebca2-2c48-47fb-b31a-7f5505016061)
 
-**C lab**
+Here , bitwise AND is performed between r1 and r3 , the result is stored in r8.
 
-1. cd: Changes the current working directory in a command-line interface.
-2. leafpad: A simple and lightweight graphical text editor for Linux systems.
-3. gcc: Performs the compilation step to build a program.
-4. ./a.out: It will execute the file that was created with the compile.
 
-**RISC-V lab**
+**4. or r9 , r2 , r5**
+![or](https://github.com/user-attachments/assets/73640edf-7b2b-439d-ab6d-77115fa937cc)
 
-1. -mabi=lp64: Specifies the ABI (Application Binary Interface) for RISC-V, indicating the use of the LP64 model, which uses 64-bit long integers and pointers.
-2. -march=rv64i: Specifies the target architecture for RISC-V. rv64i indicates a 64-bit RISC-V processor using the base integer instruction set (I).
-3. riscv-objdump: A tool that displays assembly instructions from a compiled RISC-V binary file. It helps in debugging and understanding compiled code.
-4. -Ofast: An aggressive optimization level in GCC that prioritizes performance over strict standards compliance. It enables high-speed optimizations, but some may deviate from strict IEEE or ISO standards.
-5. -O1: Enables basic optimizations in GCC that improve performance without significantly increasing compilation time.
+Here , bitwise OR is performed between r2 and r5 , the result is stored in r9.
+
+
+**5. xor r10 , r1 , r4**
+![xor](https://github.com/user-attachments/assets/191e8185-9413-435a-9356-25edb7e2f29c)
+
+Here , bitwise XOR is performed between r1 and r4 , the result is stored in r10.
+
+
+**6. addi r12 , r4 , 5**
+![image](https://github.com/user-attachments/assets/820e90ca-f119-49ab-ad87-d668344aa01f)
+
+Here , the immediate data 5 is added to the register r4 , the result is stored in r12.
+
+
+**7. lw r13 , r1 , 2**
+![lw](https://github.com/user-attachments/assets/a2016bd8-8770-470e-bcfe-d580e3c78c35)
+
+Here , the word from memory address r1 + 2 is loaded into r13.
+
+
+**8. beq r0 , r0 , 15**
+![beq](https://github.com/user-attachments/assets/f97b95d4-079a-4eb3-ae74-9443fe4dc929)
+
+Here , the Branching happens to PC + 15 if r0 == r0 (always true)
+
 </details>
 
 ----------------------------------------------------------------------------------------------------------------------------
