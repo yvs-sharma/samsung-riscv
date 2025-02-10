@@ -11,9 +11,8 @@ This program, guided by Kunal Ghosh Sir, focuses on RISC-V architecture and leve
 **GitHub Profile:** [yvs-sharma](https://github.com/yvs-sharma)
 
 ----------------------------------------------------------------------------------------------------------------------------
-
 <details>
-<summary><b>TASK 1:</b> 
+  <summary><b>TASK 1:</b> 
 
 The task involves learning from C-based and RISC-V-based lab videos and compiling C code using both GCC and RISC-V compilers. 
 In the C-based lab, you start by creating a file in your chosen directory using a text editor like gedit.
@@ -61,6 +60,7 @@ This helps you dive deeper into the code and understand its structure, like wher
 
 The Assembly language code is displayed.
 
+![image](https://github.com/user-attachments/assets/fd5e5261-2004-4178-9b60-c157cda3a37f)
 
 Using O1
 
@@ -69,3 +69,5 @@ Using O1
 Using Ofast
 
 Different optimization levels are available to improve how your code runs. For example, -O1 makes the code faster and smaller without taking too much time to compile. On the other hand, -Ofast pushes the speed to the max but might not stick to strict rules, which is fine for performance-heavy tasks. Other levels include -O0 for no optimization, -O2 for smarter improvements, -O3 for top-notch performance, and -Os for keeping the code compact. While higher optimizations can make your program faster, they might also cause unexpected issues, so it’s important to test everything carefully, especially in more complicated setups.
+  
+</details>
