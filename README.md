@@ -18,11 +18,11 @@ This program, guided by Kunal Ghosh Sir, focuses on RISC-V architecture and leve
 <details>
 <summary><b>TASK 1:</b> 
   
-The task focuses on exploring C and RISC-V labs to compile C programs using both the GCC and RISC-V compilers.</summary>
+The goal is to work with C and RISC-V labs, compiling C programs using both the GCC and RISC-V compilers.</summary>
 
 ### C Lab
 
-We start by creating a file in the chosen directory using a simple editor like Leafpad. After writing the program to calculate the sum of numbers from 1 to n, save the file, close the editor, and compile it using GCC. Once compiled, you can run the program to see the output.
+First, create a file in your preferred directory using a basic editor like Leafpad. Write a program that calculates the sum of numbers from 1 to n, then save and close the editor. Next, compile the file using GCC. After compilation, run the program to view the output.
 
  C Code to calculate 1 to n numbers
 ```
@@ -80,24 +80,30 @@ Using O1
 Using Ofast
 ![image](https://github.com/user-attachments/assets/4efc08b1-1f7f-4752-87dd-4f852f58bef6)
 
-Optimization levels in GCC improve code performance and size to varying degrees. -O0 applies no optimization, suitable for debugging. -O1 offers basic optimizations, making code faster and smaller without significantly increasing compilation time, striking a balance between performance and simplicity. -Ofast prioritizes speed over strict compliance with standards, ideal for performance-critical tasks but requires thorough testing to avoid unexpected issues. Testing is crucial, as higher optimizations may complicate debugging or affect precision in critical calculations.
+GCC optimization levels help enhance code performance and reduce size to different extents.
+
+-O0: No optimization is applied, making it ideal for debugging.
+-O1: Introduces basic optimizations, improving speed and reducing size without significantly increasing compilation time, offering a good balance.
+-Ofast: Focuses purely on speed, disregarding strict standard compliance. It's great for performance-intensive tasks but requires careful testing to prevent unexpected behavior.
+
+Since higher optimization levels can make debugging harder or impact precision in sensitive calculations, thorough testing is essential.
 
 ### Description of the commands used while execution:
 
-**C lab**
+**C Lab**
 
-1. cd: Changes the current working directory in a command-line interface.
-2. leafpad: A simple and lightweight graphical text editor for Linux systems.
-3. gcc: Performs the compilation step to build a program.
-4. ./a.out: It will execute the file that was created with the compile.
+-leafpad – A simple and lightweight text editor for Linux.
+-gcc – Compiles the program to create an executable file.
+./a.out – Executes the compiled program.
+cd – Switches the working directory in the command-line interface.
 
-**RISC-V lab**
+**RISC-V Lab**
 
-1. -mabi=lp64: Specifies the ABI (Application Binary Interface) for RISC-V, indicating the use of the LP64 model, which uses 64-bit long integers and pointers.
-2. -march=rv64i: Specifies the target architecture for RISC-V. rv64i indicates a 64-bit RISC-V processor using the base integer instruction set (I).
-3. riscv-objdump: A tool that displays assembly instructions from a compiled RISC-V binary file. It helps in debugging and understanding compiled code.
-4. -Ofast: An aggressive optimization level in GCC that prioritizes performance over strict standards compliance. It enables high-speed optimizations, but some may deviate from strict IEEE or ISO standards.
-5. -O1: Enables basic optimizations in GCC that improve performance without significantly increasing compilation time.
+-march=rv64i – Defines the target architecture for RISC-V, where rv64i represents a 64-bit processor with a base integer instruction set.
+-O1 – Enables basic GCC optimizations that enhance performance without greatly increasing compilation time.
+-mabi=lp64 – Specifies the Application Binary Interface (ABI) for RISC-V, using 64-bit long integers and pointers.
+-Ofast – A high-performance optimization flag in GCC that prioritizes speed over strict standard compliance.
+riscv-objdump – A tool that disassembles RISC-V binaries, aiding in debugging and understanding compiled code.
 </details>
 
 ----------------------------------------------------------------------------------------------------------------------------
