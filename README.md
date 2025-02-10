@@ -33,6 +33,11 @@ int main()
 }
 ```
 After writing a simple program to calculate the sum of numbers from 1 to n, you save and close the file. Then, you use the GCC compiler to compile and run the code, which gives you the output.
+The commands used are
+```
+gcc sum1ton.c
+./a.out
+```
 
 In the RISC-V lab, the process is a bit different since it uses the RISC-V GCC compiler. First, you check the code using the cat command to make sure everything looks good. Then, you compile the code using special RISC-V options like -mabi=lp64, which is for 64-bit systems, and -march=rv64i, which targets the 64-bit RISC-V architecture. After compiling, you can generate the assembly language version of the code using the riscv64-unknown-elf-objdump command. This helps you dive deeper into the code and understand its structure, like where the main function is located.
 
