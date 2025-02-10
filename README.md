@@ -241,7 +241,7 @@ Each format serves specific purposes in the processor's operation.
 
 ![image](https://github.com/user-attachments/assets/71043fcb-ff93-4b61-8b8b-4b56f55e2414)
 
-1. **R-type Instruction**:
+### 1. **R-type Instruction**:
  
 This format is used for operations that involve registers rather than memory. It is mainly used for arithmetic and logical operations.  
 
@@ -267,7 +267,7 @@ Example : add A,B,C
 32-bit Instruction: 0000000 00011 00010 000 00001 0110011
 
 
-2. **I-type Instruction**:
+### 2. **I-type Instruction**:
 
 The "I" in I-type stands for Immediate, indicating that the operations use both registers and an immediate (constant) value, rather than memory locations. This instruction type is mainly used for immediate and load operations.
 
@@ -292,7 +292,7 @@ Example : addi A,B,15
 32-bit Instruction: 000000000101 00010 000 00001 0010011
 
 
-3. **S-type Instruction**:
+### 3. **S-type Instruction**:
    
    The "S" stands for Store, indicating that this instruction type is used to store the value from a register into memory. It is primarily used for store operations.
 
@@ -320,7 +320,7 @@ Example: sw x1, 6(x2)
 32-bit Instruction: 0000000 00001 00010 010 01000 0100011
 
 
-4. **B-type Instruction**:
+### 4. **B-type Instruction**:
 
    The "B" stands for Branching, indicating that this instruction is used for conditional branching based on certain conditions.
 
@@ -355,7 +355,7 @@ Example: beq x1, x2, 16
 32-bit Instruction: 0000000 00001 00010 000 00010 1100011
 
 
-5. **U-type Instruction**:
+### 5. **U-type Instruction**:
 
    In the RV32 architecture, each U-type instruction is 32 bits long. The "U" stands for Upper Immediate, as these instructions are used to transfer an immediate value into the upper portion of the destination register. They are mainly used for loading large constants into registers.
 
@@ -379,7 +379,8 @@ Example: lui x1, 0x12345
 32-bit Instruction: 00010010001101000101 00001 0110111
 
 
-6. **J-type Instruction**:
+
+### 6. **J-type Instruction**:
 
    The "J" stands for Jump, indicating that this instruction format is used for jump-type operations, typically for branching to a specific memory location. J-type instructions are mainly used for implementing jumps and loops, allowing the program to branch to desired memory locations.
 
