@@ -64,6 +64,7 @@ The Assembly language code is displayed.
 
 Using O1
 
+![image](https://github.com/user-attachments/assets/94aa1555-d430-4123-ba52-5b3e7dfb8dfe)
 
 Using Ofast
 
