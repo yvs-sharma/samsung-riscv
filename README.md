@@ -184,7 +184,9 @@ Optimization levels in GCC improve code performance and size to varying degrees.
 4. -Ofast: An aggressive optimization level in GCC that prioritizes performance over strict standards compliance. It enables high-speed optimizations, but some may deviate from strict IEEE or ISO standards.
 5. -O1: Enables basic optimizations in GCC that improve performance without significantly increasing compilation time.
 </details>
+
 ----------------------------------------------------------------------------------------------------------------------------
+
 <details>
 <summary><b>TASK 3:</b> 
   
@@ -269,7 +271,9 @@ Optimization levels in GCC improve code performance and size to varying degrees.
 4. -Ofast: An aggressive optimization level in GCC that prioritizes performance over strict standards compliance. It enables high-speed optimizations, but some may deviate from strict IEEE or ISO standards.
 5. -O1: Enables basic optimizations in GCC that improve performance without significantly increasing compilation time.
 </details>
+
 ----------------------------------------------------------------------------------------------------------------------------
+
 <details>
 <summary><b>TASK 4:</b> 
   
@@ -354,6 +358,7 @@ Optimization levels in GCC improve code performance and size to varying degrees.
 4. -Ofast: An aggressive optimization level in GCC that prioritizes performance over strict standards compliance. It enables high-speed optimizations, but some may deviate from strict IEEE or ISO standards.
 5. -O1: Enables basic optimizations in GCC that improve performance without significantly increasing compilation time.
 </details>
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 
