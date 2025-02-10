@@ -83,7 +83,9 @@ Using Ofast
 GCC optimization levels help enhance code performance and reduce size to different extents.
 
 -O0: No optimization is applied, making it ideal for debugging.
+
 -O1: Introduces basic optimizations, improving speed and reducing size without significantly increasing compilation time, offering a good balance.
+
 -Ofast: Focuses purely on speed, disregarding strict standard compliance. It's great for performance-intensive tasks but requires careful testing to prevent unexpected behavior.
 
 Since higher optimization levels can make debugging harder or impact precision in sensitive calculations, thorough testing is essential.
@@ -100,10 +102,15 @@ cd – Switches the working directory in the command-line interface.
 **RISC-V Lab**
 
 -march=rv64i – Defines the target architecture for RISC-V, where rv64i represents a 64-bit processor with a base integer instruction set.
+
 -O1 – Enables basic GCC optimizations that enhance performance without greatly increasing compilation time.
+
 -mabi=lp64 – Specifies the Application Binary Interface (ABI) for RISC-V, using 64-bit long integers and pointers.
+
 -Ofast – A high-performance optimization flag in GCC that prioritizes speed over strict standard compliance.
+
 riscv-objdump – A tool that disassembles RISC-V binaries, aiding in debugging and understanding compiled code.
+
 </details>
 
 ----------------------------------------------------------------------------------------------------------------------------
