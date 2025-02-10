@@ -11,6 +11,8 @@ This program, guided by Kunal Ghosh Sir, focuses on RISC-V architecture and leve
 
 **GitHub Profile:** [yvs-sharma](https://github.com/yvs-sharma)
 
+**Linkedin Profile:** [Sumukha Sharma YV](https://www.linkedin.com/in/sumukha-sharma-yv-71213925a)
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 <details>
