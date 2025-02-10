@@ -8,10 +8,31 @@ This program, guided by Kunal Ghosh Sir, focuses on RISC-V architecture and leve
 
 **Email ID:** yvssharma007@gmail.com
 
-**GitHub Profile:** https://github.com/yvs-sharma
-Task-1 :
+**GitHub Profile:** [yvs-sharma](https://github.com/yvs-sharma)
 
-The task involves learning from C-based and RISC-V-based lab videos and compiling C code using both GCC and RISC-V compilers. In the C-based lab, you start by creating a file in your chosen directory using a text editor like gedit. After writing a simple program to calculate the sum of numbers from 1 to n, you save and close the file. Then, you use the GCC compiler to compile and run the code, which gives you the output.
+----------------------------------------------------------------------------------------------------------------------------
+
+<details>
+<summary><b>TASK 1:</b> 
+
+The task involves learning from C-based and RISC-V-based lab videos and compiling C code using both GCC and RISC-V compilers. 
+In the C-based lab, you start by creating a file in your chosen directory using a text editor like gedit.
+
+C Code to calculate 1 to n numbers
+```
+#include<stdio.h>
+int main()
+{
+  int i, sum=0, n=90;
+  for(i=0;i<=n;++i)
+    {
+      sum+=i;
+    }
+  printf("Sum of numbers from 1 to %d is %d\n",n,sum);
+  return 0;
+}
+```
+After writing a simple program to calculate the sum of numbers from 1 to n, you save and close the file. Then, you use the GCC compiler to compile and run the code, which gives you the output.
 
 In the RISC-V lab, the process is a bit different since it uses the RISC-V GCC compiler. First, you check the code using the cat command to make sure everything looks good. Then, you compile the code using special RISC-V options like -mabi=lp64, which is for 64-bit systems, and -march=rv64i, which targets the 64-bit RISC-V architecture. After compiling, you can generate the assembly language version of the code using the riscv64-unknown-elf-objdump command. This helps you dive deeper into the code and understand its structure, like where the main function is located.
 
