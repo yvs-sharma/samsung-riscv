@@ -439,10 +439,12 @@ The gtkwave will be opened and the following window will appear.
 
 Some of the output waveforms are given here ,
 
+
 **1. sub r7 , r1 , r2**
 ![sub](https://github.com/user-attachments/assets/f4828f86-c400-43d2-9f0e-2c8d799dd9e2)
 
 Here , the subtraction of r2 from r1 happens and the result is stored in r7.
+
 
 
 **2. add r6 , r1 , r2**
@@ -451,10 +453,12 @@ Here , the subtraction of r2 from r1 happens and the result is stored in r7.
 Here , the sum of r2 from r1 happens and the result is stored in r6.
 
 
+
 **3. and r8 , r1 , r3**
 ![and](https://github.com/user-attachments/assets/b37ebca2-2c48-47fb-b31a-7f5505016061)
 
 Here , bitwise AND is performed between r1 and r3 , the result is stored in r8.
+
 
 
 **4. or r9 , r2 , r5**
@@ -463,10 +467,12 @@ Here , bitwise AND is performed between r1 and r3 , the result is stored in r8.
 Here , bitwise OR is performed between r2 and r5 , the result is stored in r9.
 
 
+
 **5. xor r10 , r1 , r4**
 ![xor](https://github.com/user-attachments/assets/191e8185-9413-435a-9356-25edb7e2f29c)
 
 Here , bitwise XOR is performed between r1 and r4 , the result is stored in r10.
+
 
 
 **6. addi r12 , r4 , 5**
@@ -475,10 +481,12 @@ Here , bitwise XOR is performed between r1 and r4 , the result is stored in r10.
 Here , the immediate data 5 is added to the register r4 , the result is stored in r12.
 
 
+
 **7. lw r13 , r1 , 2**
 ![lw](https://github.com/user-attachments/assets/a2016bd8-8770-470e-bcfe-d580e3c78c35)
 
 Here , the word from memory address r1 + 2 is loaded into r13.
+
 
 
 **8. beq r0 , r0 , 15**
