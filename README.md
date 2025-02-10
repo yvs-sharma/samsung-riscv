@@ -415,21 +415,30 @@ To conduct a functional simulation of the provided RISC-V Core Verilog netlist a
 Use the following commands for installation:
 
 1. For iverilog ,
+
 ` $ sudo apt install iverilog`
 
-2. For gtkwave,
+3. For gtkwave,
+
 ` $ sudo apt install gtkwave`
 
 ### Step 2: Creating files for verilog and testbench by following commands
+
 `  $ gedit iiitb_rv32i.v`
+
 ` $ gedit iiitb_rv32i_tb.v`
 
 ### Step 3: To simulate and run the verilog code , 
+
 `  $ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v`
+
 ` $ ./iiitb_rv32i`
 
 ### Step 4: Command to see the simulation waveform ,
+
 `  $ gtkwave iiitb_rv32i.vcd`
+
+
 
 The gtkwave will be opened and the following window will appear.
 ![image](https://github.com/user-attachments/assets/17c33cea-da53-448e-a1bd-444a42554025)
