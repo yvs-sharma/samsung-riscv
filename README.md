@@ -72,6 +72,7 @@ to disassemble the code and examine its assembly language version. This provides
 
 The Assembly language code is displayed.
 
+![image](https://github.com/user-attachments/assets/955d5f39-b1ea-4c34-9027-b7aa30410faa)
 
 Using O1
 
