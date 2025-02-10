@@ -157,13 +157,27 @@ spike pk swap.o
 
 ![image](https://github.com/user-attachments/assets/1a105a81-3e54-4135-921b-540f58007c90)
 
+Object dump using O1 and Ofast
 
 ![image](https://github.com/user-attachments/assets/732013ca-7b48-4408-ac36-01ef83bfc12b)
 
+Using Ofast
 
 ![image](https://github.com/user-attachments/assets/955d5f39-b1ea-4c34-9027-b7aa30410faa)
 
+Using O1
 
+Debug:
+
+1. To open the object dump , 
+```
+riscv64-unknown-elf-objdump -d swap.o | less
+```
+
+2. To debug ,
+ ```
+   spike -d pk swap.o
+ ```
 ![image](https://github.com/user-attachments/assets/4efc08b1-1f7f-4752-87dd-4f852f58bef6)
 
 
