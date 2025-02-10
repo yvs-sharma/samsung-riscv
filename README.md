@@ -1,6 +1,14 @@
-# samsung-riscv
+# Samsung-riscv
 This program, guided by Kunal Ghosh Sir, focuses on RISC-V architecture and leverages open-source tools to teach VLSI chip design and RISC-V concepts.
+## Basic Details:
 
+**Name:** Sumukha Sharma Y V
+
+**College:** Vidyavardhaka College of Engineering
+
+**Email ID:** yvssharma007@gmail.com
+
+**GitHub Profile:** 
 Task-1 :
 
 The task involves learning from C-based and RISC-V-based lab videos and compiling C code using both GCC and RISC-V compilers. In the C-based lab, you start by creating a file in your chosen directory using a text editor like gedit. After writing a simple program to calculate the sum of numbers from 1 to n, you save and close the file. Then, you use the GCC compiler to compile and run the code, which gives you the output.
