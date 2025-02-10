@@ -95,8 +95,11 @@ Since higher optimization levels can make debugging harder or impact precision i
 **C Lab**
 
 -leafpad – A simple and lightweight text editor for Linux.
+
 -gcc – Compiles the program to create an executable file.
+
 ./a.out – Executes the compiled program.
+
 cd – Switches the working directory in the command-line interface.
 
 **RISC-V Lab**
