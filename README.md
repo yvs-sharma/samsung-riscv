@@ -263,6 +263,7 @@ The 32-bit instruction is divided into six fields:
 These fields work together to execute arithmetic and logical instructions using registers in the RISC-V architecture.
 
 Example : add A,B,C
+
 32-bit Instruction: 0000000 00011 00010 000 00001 0110011
 
 
@@ -287,6 +288,7 @@ These fields together enable operations that involve both registers and immediat
 ![image](https://github.com/user-attachments/assets/572d92bc-8931-4bbc-a4de-4bcee6be5020)
 
 Example : addi A,B,15
+
 32-bit Instruction: 000000000101 00010 000 00001 0010011
 
 
@@ -314,6 +316,7 @@ Key Features of S-type:
 - The value to be stored is found in the `rs2` field, while the address is calculated using `rs1` and the immediate field.
 
 Example: sw x1, 6(x2)  
+
 32-bit Instruction: 0000000 00001 00010 010 01000 0100011
 
 
@@ -348,6 +351,7 @@ Word Alignment:
 - RV32 instructions are word-aligned, meaning the address must always be a multiple of 4 bytes.
 
 Example: beq x1, x2, 16 
+
 32-bit Instruction: 0000000 00001 00010 000 00010 1100011
 
 
@@ -371,6 +375,7 @@ Key Instructions in U-type:
 - **AUIPC (Add Upper Immediate to PC)**: Adds a 20-bit immediate value to the current Program Counter (PC) and stores the result in the destination register.
 
 Example: lui x1, 0x12345  
+
 32-bit Instruction: 00010010001101000101 00001 0110111
 
 
@@ -391,6 +396,7 @@ Key Instruction in J-type:
 - **JAL (Jump and Link)**: This instruction performs a jump to the target address specified by the immediate value and stores the return address (the next instruction's address) in the destination register (`rd`).
 
 Example: jal x1, 2048 
+
 32-bit Instruction: 000000000010 0000000000 00001 1101111
 </details>
 
