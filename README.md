@@ -38,7 +38,19 @@ The commands used are
 gcc sum1ton.c
 ./a.out
 ```
+![image](https://github.com/user-attachments/assets/be6a91ae-3a5e-45ec-bd1a-933c33bae4a0)
 
-In the RISC-V lab, the process is a bit different since it uses the RISC-V GCC compiler. First, you check the code using the cat command to make sure everything looks good. Then, you compile the code using special RISC-V options like -mabi=lp64, which is for 64-bit systems, and -march=rv64i, which targets the 64-bit RISC-V architecture. After compiling, you can generate the assembly language version of the code using the riscv64-unknown-elf-objdump command. This helps you dive deeper into the code and understand its structure, like where the main function is located.
+In the RISC-V lab, the process is a bit different since it uses the RISC-V GCC compiler. First, you check the code using the cat command to make sure everything looks good.
+```
+cat sum.c
+```
+Then, you compile the code using special RISC-V options like -mabi=lp64, which is for 64-bit systems, and -march=rv64i, which targets the 64-bit RISC-V architecture.
+The commands used are as follows:
+```
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
+```
+
+After compiling, you can generate the assembly language version of the code using the riscv64-unknown-elf-objdump command. This helps you dive deeper into the code and understand its structure, like where the main function is located.
 
 Different optimization levels are available to improve how your code runs. For example, -O1 makes the code faster and smaller without taking too much time to compile. On the other hand, -Ofast pushes the speed to the max but might not stick to strict rules, which is fine for performance-heavy tasks. Other levels include -O0 for no optimization, -O2 for smarter improvements, -O3 for top-notch performance, and -Os for keeping the code compact. While higher optimizations can make your program faster, they might also cause unexpected issues, so it’s important to test everything carefully, especially in more complicated setups.
